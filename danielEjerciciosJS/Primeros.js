@@ -1,30 +1,32 @@
 // Ejercicio de prompt y alert
 
 
-function pedirMostrarData(){
+(function pedirMostrarData(){
 
  	let array=[];
-
+  let data;
+  
 	for (let i=0; i<3;i++){
     if(i!=2){
-      let data=Number(prompt(`insert data ${i}: `));
+      data=Number(prompt(`insert data ${i}: `));
     } else{
-      let data=prompt(`insert data ${i}: `);
+      data=prompt(`insert data ${i}: `);
     }
 		array.push(data);
 	};
 
-    let arrayNovo=[];
+  let arrayNovo=[];
   for(let i=0;i<2;i++){
-    let data=Number(prompt('insert array data numbers'));
+     data=Number(prompt('insert array data numbers'));
     arrayNovo.push(data);
   }
 
   array.push(arrayNovo);
+  
 	localStorage.setItem('Ingresado', array );
 	array.forEach((c,index) => alert (`El valor ${index} es: ${c}`));
 
-};
+})();
 
 
 

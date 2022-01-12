@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+
+    <title>Ejercicios Propuestos</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Primera Parte</h1>
+        <div class="first">
+          <ol style="list-style-type:upper-roman">
+            <div>
+              <li>Crear un array con los siguientes valores:  1,3,”a”,[1,2] <button type="button" class="btnA"> Execute</button></li>
+              <p class="item-a show"></p>
+            </div>
+            <div>
+              <li>Pedir al usuario números hasta que ingrese la letra q. guardar los números en un array <button type="button" class="btnB"> Execute</button></li>
+              <p class="item-b show"></p>
+            </div>
+            <div>
+            <li>Mostrar los números ingresados por el usuario multiplicados por 2 <br>
+            <span>Se eliminarán los datos no numéricos</span>
+            <button type="button" class="btnC"> Execute</button> </li><p class="item-c show"></p>
+            </div>
+            <div>
+              <li>Mostrar los elementos del array que son primos
+              <button type="button" class="btnD"> Execute</button></li><p class="item-d show"></p>
+            </div>
+            <div>
+              <li>Devolver si existe un elemento dentro del array
+              <button type="button" class="btnE"> Execute</button></li><p class="item-e show"></p>
+            </div>
+            <div>
+              <li>Filtrar todos los elementos que no sean de tipo numerico
+              <button type="button" class="btnF"> Execute</button></li><p class="item-f show"></p>
+            </div>
+            <div>
+              <li>Ordenar los elementos de menor a mayor
+              <button type="button" class="btnG"> Execute</button></li><p class="item-g show"></p>
+            </div>
+
+          </ol>
+          <button type="button" name="button" class="clear"> Clear Data</button>
+        </div>
+        <div>
+          <h1> Segunda Parte</h1>
+            <span>Ejercicios con diccionarios (también conocido como objeto, json, par clave valor):</span><br>
+            <span>Dada la siguiente estructura :</span>
+        </div>
+        <div class="second">
+          <div>
+            {<br>
+              “nombre”: “pepe”,<br>
+              “apellido”: “martinez”,<br>
+              “Dni”: 3912388 <br>
+            } <br><br>
+          </div>
+
+            <span> Ejercicios con diccionarios (también conocido como objeto, json, par clave valor): </span>
+              <ul>
+                <li>Pedir los datos un usuario y crear la estructura arriba mencionada</li>
+                <div id="data">
+                  <input type="text" placeholder="nombre"><br>
+                  <input type="text" placeholder="apellido"><br>
+                  <input type="text" placeholder="DNI"><br>
+                  <button type="button" id="createPersona">Ingresar</button>
+                </div>
+
+                <li>Al finalizar la carga, agregar un nuevo campo “dniEsPar” (booleano) si el dni es par o no</li>
+                <li>Eliminar el campo nombre y apellido y crear un nuevo campo “nombreCompleto” por ejemplo: “nombreCompleto” : “ pepe martinez”</li>
+                <li>Convertir el json a cadena de texto (buscar el método, pista: “json to string”)</li>
+              </ul>
+          <div>
+            <button type="button" class="btnClear">Clear Data</button>
+          </div>
+          <div class="displayPersona">
+
+          </div>
+
+        </div>
+
+        <div class="insert-data"></div>
+    </div>
+
+    <style>
+        *{
+          font-family: 'Inconsolata', monospace;
+        }
+
+        button{
+          border:none;
+          border-radius: 5px;
+          height: 30px;
+          background-color: whitesmoke;
+        }
+
+        button:hover{
+          background-color: GRAY;
+        }
+
+        .first, .second, body{
+            padding: 20px;
+            margin: 20px;
+        }
+
+        #data input{
+
+            border-radius: 10px;
+            text-align: center;
+            border:none;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            height: 20px;
+            margin: 5px;
+        }
+
+
+
+        #data button{
+          margin: 10px;
+        }
+
+        #data input:hover{
+          box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        }
+
+
+    </style>
+    <script async src="sample.js" charset="utf-8"></script>
+  </body>
+</html>
